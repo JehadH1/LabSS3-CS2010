@@ -13,6 +13,7 @@ extern int rmd;
 int main() {
 	cout << "how many pennies less than 100 do you want to use ";
 	cin >> usr_pennie;
+	usr_pennie = 100 - usr_pennie;
 	total = usr_pennie / dollor;
 	rmd = usr_pennie % dollor;
 	cout << "your number of dollor is " << total << " \n";
